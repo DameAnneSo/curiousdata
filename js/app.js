@@ -18,5 +18,26 @@ navBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
-// set year
-date.innerHTML = new Date().getFullYear();
+
+// ********** smooth scroll ************
+// select links
+// const scrollLinks = document.querySelectorAll(".scroll-link");
+// scrollLinks.forEach(link => {
+//   link.addEventListener("click", e => {
+//     // prevent default
+//     e.preventDefault();
+//     links.classList.remove("show-links");
+
+//     const id = e.target.getAttribute("href").slice(1);
+//     const element = document.getElementById(id);
+//     //
+//     let position = element.offsetTop - 62;
+
+//     window.scrollTo({
+//       left: 0,
+//       // top: element.offsetTop,
+//       top: position,
+//       behavior: "smooth"
+//     });
+//   });
+// });
